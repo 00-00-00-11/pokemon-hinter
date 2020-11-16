@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "lodash": "^4.17.20"
+  },
+  "name": "bot",
+  "version": "1.0.0",
+  "main": "my_bot.js",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.1"
+  },
+  "scripts": {
+    "test": "nodemon --exec babel-node test.js",
+    "start": "nodemon --exec babel-node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
