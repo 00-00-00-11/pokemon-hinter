@@ -3,6 +3,7 @@ const client = new Discord.Client();
 import pokeNames from "./pokeNames";
 import _ from "lodash";
 let pokemons = pokeNames;
+require("dotenv").config();
 
 client.on("ready", () => {
   console.log("Connected as " + client.user.tag);
@@ -48,7 +49,6 @@ client.on("message", async (message) => {
   }
 });
 
-const bot_secret_token =
-  "Nzc2ODIyMDQ4NTcwNzM2NjYw.X66d6Q.lDUpx_MExP-CPtjwKg5zsB3gnzU";
+const bot_secret_token = process.env.SECRET_KEY;
 
 client.login(bot_secret_token);
